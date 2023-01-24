@@ -9,7 +9,7 @@ import { getConfig } from "./config";
 
 const onRedirectCallback = (appState) => {
   history.push(
-    appState && appState.returnTo ? appState.returnTo : window.location.pathname
+    appState && appState.returnTo ? appState.returnTo : window.location.href
   );
 };
 
