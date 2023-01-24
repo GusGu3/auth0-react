@@ -6,7 +6,7 @@ import { getConfig } from "../config";
 import Loading from "../components/Loading";
 
 export const ExternalApiComponent = () => {
-  const { apiOrigin = "http://localhost:3001", audience } = getConfig();
+  const { apiOrigin = "https://gusgu3.github.io/auth0-react/", audience } = getConfig();
 
   const [state, setState] = useState({
     showResult: false,

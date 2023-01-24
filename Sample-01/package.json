@@ -1,8 +1,11 @@
 {
   "name": "auth0-react-sample",
   "version": "0.1.0",
+  "homepage": "https://GusGu3.github.io/auth0-react",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npm-run-all --parallel spa api-server",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +46,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16",
     "@testing-library/react": "^12.1",
+    "gh-pages": "^5.0.0",
     "jest-environment-jsdom": "^27.0",
     "jest-fetch-mock": "^3.0",
     "nodemon": "^2.0"
