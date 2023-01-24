@@ -9,7 +9,7 @@ import { getConfig } from "./config";
 
 const onRedirectCallback = (appState) => {
   history.push(
-    appState && appState.returnTo ? appState.returnTo : window.location.href
+    appState && appState.returnTo ? appState.returnTo : window.location.pathname + "/auth0-react/"
   );
 };
 
@@ -22,7 +22,7 @@ const providerConfig = {
   clientId: config.clientId,
   onRedirectCallback,
   authorizationParams: {
-    redirect_uri: window.location.href,
+    redirect_uri: window.location.origin + "/auth0-react/",
     ...(config.audience ? { audience: config.audience } : null),
   },
 };
