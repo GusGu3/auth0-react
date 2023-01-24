@@ -35,9 +35,9 @@ const App = () => {
         <NavBar />
         <Container className="flex-grow-1 mt-5">
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/profile" component={Profile} />
-            <Route path="/external-api" component={ExternalApi} />
+            <Route path="/auth0-react/" exact component={Home} />
+            <Route path="/auth0-react/profile" component={Profile} />
+            <Route path="/auth0-react/external-api" component={ExternalApi} />
           </Switch>
         </Container>
         <Footer />
