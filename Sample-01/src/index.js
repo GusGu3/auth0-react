@@ -9,7 +9,7 @@ import { getConfig } from "./config";
 
 const onRedirectCallback = (appState) => {
   history.push(
-    appState && appState.returnTo ? appState.returnTo : 'https://gusgu3.github.io/auth0-react/'
+    appState && appState.returnTo ? appState.returnTo : window.location.pathname
   );
 };
 
