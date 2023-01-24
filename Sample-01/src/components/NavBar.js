@@ -33,7 +33,7 @@ const NavBar = () => {
   const logoutWithRedirect = () =>
     logout({
         logoutParams: {
-          returnTo: window.location.origin,
+          returnTo: 'https://gusgu3.github.io/auth0-react',
         }
     });
 
