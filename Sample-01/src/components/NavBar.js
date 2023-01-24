@@ -48,7 +48,7 @@ const NavBar = () => {
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/"
+                  to="/auth0-react/"
                   exact
                   activeClassName="router-link-exact-active"
                 >
@@ -59,7 +59,7 @@ const NavBar = () => {
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/external-api"
+                    to="/auth0-react/external-api"
                     exact
                     activeClassName="router-link-exact-active"
                   >
@@ -95,7 +95,7 @@ const NavBar = () => {
                     <DropdownItem header>{user.name}</DropdownItem>
                     <DropdownItem
                       tag={RouterNavLink}
-                      to="/profile"
+                      to="/auth0-react/profile"
                       className="dropdown-profile"
                       activeClassName="router-link-exact-active"
                     >
@@ -146,7 +146,7 @@ const NavBar = () => {
                 <NavItem>
                   <FontAwesomeIcon icon="user" className="mr-3" />
                   <RouterNavLink
-                    to="/profile"
+                    to="/auth0-react/profile"
                     activeClassName="router-link-exact-active"
                   >
                     Profile
