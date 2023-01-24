@@ -22,7 +22,7 @@ const providerConfig = {
   clientId: config.clientId,
   onRedirectCallback,
   authorizationParams: {
-    redirect_uri: window.location.origin,
+    redirect_uri: window.location.href,
     ...(config.audience ? { audience: config.audience } : null),
   },
 };
