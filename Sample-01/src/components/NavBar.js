@@ -27,8 +27,15 @@ const NavBar = () => {
     isAuthenticated,
     loginWithRedirect,
     logout,
+    
   } = useAuth0();
   const toggle = () => setIsOpen(!isOpen);
+
+  const sms = createAuth0Client({
+    domain: config.domain,
+    client_id: config.clientId,
+    connection: "sms"
+ });
 
   const logoutWithRedirect = () =>
     logout({
@@ -122,6 +129,14 @@ const NavBar = () => {
                     onClick={() => loginWithRedirect({})}
                   >
                     Log in
+                  </Button>
+                  <Button
+                    id="qsLoginBtn"
+                    color="primary"
+                    block
+                    onClick={() => loginWithRedirect({})}
+                  >
+                    Log in with SMS
                   </Button>
                 </NavItem>
               </Nav>
